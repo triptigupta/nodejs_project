@@ -1,9 +1,14 @@
 var rect = require("./rectangle.js");
 
 function solveRect(l,b) {
-	console.log('solving rectangle');
-	console.log(rect.perimeter(l,b));
-	console.log('area is '+rect.area(l,b));
+	rect(2,3,(error, rectangle) => {
+		if (error) {
+			console.log(error.message);
+		} else {
+			console.log(rectangle.perimeter());
+			console.log(rectangle.area());
+		}
+	});
 }
 
 solveRect(2,3);
