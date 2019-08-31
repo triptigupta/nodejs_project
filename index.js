@@ -9,6 +9,7 @@ function solveRect(l,b) {
 			console.log(rectangle.area());
 		}
 	});
+	console.log('first this will be printed');
 }
 
 solveRect(2,3);
